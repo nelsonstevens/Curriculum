@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+		<title>Contacto</title>
+
+		<!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+		<!-- Bootstrap -->
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+
+		<!-- Font Awesome Icon -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+
+		<!-- Stlylesheet -->
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+		<link type="text/css" rel="stylesheet" href="css/misestilos.css"/>
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    </head>
+	<body>
+		<!-- HEADER -->
+		<header>
+			<!-- TOP HEADER -->
+			<div id="top-header">
+				<div class="container">
+					<ul class="header-links pull-left">
+						<li><a href="#"><i class="fa fa-phone"></i>+502 4776-4877</a></li>
+						<li><a href="#"><i class="fa fa-envelope-o"></i>nelsoncifuentes555@gmail.com</a></li>
+						<li><a href="#"><i class="fa fa-map-marker"></i>Guatemala</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /TOP HEADER -->
+
+			<!-- MAIN HEADER -->
+			<div id="header">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<!-- LOGO -->
+						<div class="col-md-3">
+							<div class="header-logo">
+								<a href="index.html" class="logo">
+									<img src="./img/logo1.png" alt="" width="180" height="100">
+								</a>
+							</div>
+						</div>
+						<!-- /LOGO -->						
+
+						<!-- ACCOUNT -->
+						<div class="col-md-3 clearfix">
+							<div class="header-ctn">							
+
+								<!-- Menu Toogle -->
+								<div class="menu-toggle">
+									<a href="#">
+										<i class="fa fa-bars"></i>
+										<span>Menu</span>
+									</a>
+								</div>
+								<!-- /Menu Toogle -->
+							</div>
+						</div>
+						<!-- /ACCOUNT -->
+					</div>
+					<!-- row -->
+				</div>
+				<!-- container -->
+			</div>
+			<!-- /MAIN HEADER -->
+		</header>
+		<!-- /HEADER -->
+
+		<!-- NAVIGATION -->
+		<nav id="navigation">
+			<!-- container -->
+			<div class="container">
+				<!-- responsive-nav -->
+				<div id="responsive-nav">
+					<!-- NAV -->
+					<ul class="main-nav nav navbar-nav">
+						<li><a href="index.html">Principal</a></li>
+						
+						<li class="active"><a href="contacto.html">Contactenos</a></li>
+						<li><a href="skills.html">Skills</a></li>
+						<li><a href="referencias.html">Referencias</a></li>
+					</ul>
+					<!-- /NAV -->
+				</div>
+				<!-- /responsive-nav -->
+			</div>
+			<!-- /container -->
+		</nav>
+		<!-- /NAVIGATION -->
+
+		<!-- SECTION -->
+		<div class="section">
+			<!-- container -->
+			<div class="container">
+				<h1>Contactenos</h1>
+				<a>Escribenos tus datos y la razon por la que deseas contactarnos</a>
+					<div id="error_message">
+					   
+					</div>
+					<form action="" id="myform" onsubmit = "return validate();">
+					  <div class="input_field">
+						  <input type="text" placeholder="Name" id="name" size="50">
+					  </div>
+					  <div class="input_field">
+						  <input type="text" placeholder="Email" id="email" size="50">
+					  </div>
+					  <div class="input_field">
+						  <textarea placeholder="Razon de Contacto" id="razon"  rows="10" cols="52"></textarea>
+					  </div>
+					  <div class="btn">
+						  <input type="submit" value="Enviar">
+						  <input type="button" value="Cancelar" onclick="closeContact()" id="cancelar">
+					  </div>
+					</form>
+			
+				
+
+
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /SECTION -->
+
+	
+	</body>
+		
+		<!-- FOOTER -->
+		<footer id="footer">
+			<!-- top footer -->
+			<div class="section">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">About Us</h3>
+								<p>Nelson Steven Cifuentes Chilin</p>
+								<ul class="footer-links">
+									<li><a href="#"><i class="fa fa-map-marker"></i>Guatemala</a></li>
+									<li><a href="#"><i class="fa fa-phone"></i>+502 4776-4877</a></li>
+									<li><a href="#"><i class="fa fa-envelope-o"></i>nelsoncifuentes555@gmail.com</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Menu</h3>
+								<ul class="footer-links">
+									<li><a href="index.html">Principal</a></li>
+									
+									<li><a href="contacto.html">Contactenos</a></li>
+									<li><a href="skills.html">Skills</a></li>
+									<li><a href="referencias.html">Referencias</a></li> 
+								</ul>
+							</div>
+						</div>
+
+					</div>
+					<!-- /row -->
+				</div>
+				<!-- /container -->
+			</div>
+			<!-- /top footer -->
+
+		</footer>
+		<!-- /FOOTER -->
+
+		<!-- jQuery Plugins -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/nouislider.min.js"></script>
+		<script src="js/jquery.zoom.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/mijavascript.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+
+			//creo el plugin cuentaCaracteres
+			jQuery.fn.cuentaCaracteres = function() {
+				//para cada uno de los elementos del objeto jQuery
+				this.each(function(){
+					//creo una variable elem con el elemento actual, suponemos un textarea
+					elem = $(this);
+					//Creamos un div
+					var contador = $('<div>Total de Caracteres: ' + elem.val().length + '<div>');
+					//insertamos el div despues
+					elem.after(contador);
+					//guardar referencia al div en los datos del objeto jQuery
+					elem.data("campocontador", contador);
+					//crear listener del evento keyup
+					elem.keyup(function(){
+						var elem = $(this);
+						//recuperar el objeto del div
+						var campocontador = elem.data("campocontador");
+						//modificar el texto del contador
+						campocontador.text('Contador de Caracteres: ' + elem.val().length);
+					});
+				});
+			
+				//siempre tengo que devolver this
+				return this;
+			};
+			
+			$(document).ready(function(){
+				$("textarea").cuentaCaracteres();
+				
+			})
+			</script>
+
+	</body>
+</html>
+

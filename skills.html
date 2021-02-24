@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+		<title>Skills</title>
+
+		<!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+		<!-- Bootstrap -->
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+
+		<!-- Font Awesome Icon -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+
+		<!-- Stlylesheet -->
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+		<link type="text/css" rel="stylesheet" href="css/misestilos.css"/>
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    </head>
+	<body>
+		<!-- HEADER -->
+		<header>
+			<!-- TOP HEADER -->
+			<div id="top-header">
+				<div class="container">
+					<ul class="header-links pull-left">
+						<li><a href="#"><i class="fa fa-phone"></i>+502 4776-4877</a></li>
+						<li><a href="#"><i class="fa fa-envelope-o"></i>nelsoncifuentes555@gmail.com</a></li>
+						<li><a href="#"><i class="fa fa-map-marker"></i>Guatemala</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /TOP HEADER -->
+
+			<!-- MAIN HEADER -->
+			<div id="header">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<!-- LOGO -->
+						<div class="col-md-3">
+							<div class="header-logo">
+								<a href="index.html" class="logo">
+									<img src="./img/logo1.png" alt="" width="180" height="100">
+								</a>
+							</div>
+						</div>
+						<!-- /LOGO -->						
+
+						<!-- ACCOUNT -->
+						<div class="col-md-3 clearfix">
+							<div class="header-ctn">							
+
+								<!-- Menu Toogle -->
+								<div class="menu-toggle">
+									<a href="#">
+										<i class="fa fa-bars"></i>
+										<span>Menu</span>
+									</a>
+								</div>
+								<!-- /Menu Toogle -->
+							</div>
+						</div>
+						<!-- /ACCOUNT -->
+					</div>
+					<!-- row -->
+				</div>
+				<!-- container -->
+			</div>
+			<!-- /MAIN HEADER -->
+		</header>
+		<!-- /HEADER -->
+
+		<!-- NAVIGATION -->
+		<nav id="navigation">
+			<!-- container -->
+			<div class="container">
+				<!-- responsive-nav -->
+				<div id="responsive-nav">
+					<!-- NAV -->
+					<ul class="main-nav nav navbar-nav">
+						<li><a href="index.html">Principal</a></li>
+						
+						<li><a href="contacto.html">Contactenos</a></li>
+						<li class="active"><a href="skills.html">Skills</a></li>
+						<li><a href="referencias.html">Referencias</a></li>
+					</ul>
+					<!-- /NAV -->
+				</div>
+				<!-- /responsive-nav -->
+			</div>
+			<!-- /container -->
+		</nav>
+		<!-- /NAVIGATION -->
+
+		
+			<main>
+				<div class="banner">
+					<input type="button" value="<<" onClick="backward()">
+					<img id="slider" src="./img/skills0.png" alt="">
+					<input type="button" value=">>" onClick="forward()">
+				</div>
+			</main>
+
+	</body>
+		
+		
+
+		<!-- jQuery Plugins -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/nouislider.min.js"></script>
+		<script src="js/jquery.zoom.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/mijavascript.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+		<script>        
+
+			var imgBanner = document.getElementById("slider");
+			imgBanner.addEventListener('mouseover', cambiarImagen);
+			imgBanner.addEventListener('mouseout', regresarImagen);
+	
+			function cambiarImagen(){
+				imgBanner.style.border = "2px dotted red";
+				document.body.style.cursor = 'pointer';
+			}
+	
+			function regresarImagen(){ 
+				imgBanner.style.border = "none";
+				document.body.style.cursor = 'auto';
+			}
+	
+	
+			setInterval('forward()', 3000);
+	
+		</script>
+		<script>
+			//VENTANA EMERGENTE AL SELECCIONAR UNA IMAGEN
+		jQuery(function($){
+      $('#slider').click(function(){
+		var img=$(this).attr("src");
+		//CREAMOS EL DIV QUE CONTENDRA LA VENTANA
+		var appear_image = "<div id='appear_image_div' onClick='closeImage()'></div>";
+		//LE CONCATENAMOS AL DIV LA IMAGEN QUE SE MOSTRARA
+		appear_image = appear_image.concat("<img id='appear_image' src='"+ photos[wich]+ "'/>");
+		//MUESTRA EL ICONO DE CERRAR Y LE PONEMOS LA FUNCION DE CERRAR IMAGEN
+        appear_image = appear_image.concat("<img id='close_image' onClick='closeImage()' src='./img/close.png' />");
+        $('body').append(appear_image);
+      });
+	});
+	//FUNCION PARA CERRAR IMAGEN
+    function closeImage(){
+      $('#appear_image_div').remove();
+      $('#appear_image').remove();
+      $('#close_image').remove();
+    }
+		</script>
+	</body>
+</html>
+
